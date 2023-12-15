@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Profe Juanjo</title>
 </head>
 <body>
+<div>
+    <!-- Botones en el pie de la página -->
+    <div class="absolute self-end right-0">
+        <button id="openAboutMe" class="bg-blue-500 hover:bg-blue-700 text-dark font-bold py-2 px-4 rounded">Acerca de mí</button>
+        <button id="openClasesParticulares" class="bg-blue-500 hover:bg-blue-700 text-dark font-bold py-2 px-4 rounded">Clases Particulares</button>
+        <button id="openContacto" class="bg-blue-500 hover:bg-blue-700 text-dark font-bold py-2 px-4 rounded">Contacto</button>
+      </div>
     
+      <!-- Popups ocultos por defecto -->
+      <div id="aboutMePopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
+            <p class="text-center">
+                Soy un desarrollador front-end apasionado que recientemente ha descubierto una nueva faceta en mi carrera: la enseñanza. Encontré una gran satisfacción compartiendo mi conocimiento con otros, especialmente con adultos mayores. Mi enfoque se centra en brindarles una introducción a la tecnología y enseñarles el uso efectivo de dispositivos. A través de esta experiencia, he descubierto la alegría de ver cómo las personas adquieren habilidades digitales y se aventuran en el mundo tecnológico.
+        
+                Actualmente, mi objetivo es expandir estas enseñanzas para incluir los principios fundamentales de la programación web. Creo firmemente en que la tecnología puede ser accesible para todos, y mi intención es hacer que el aprendizaje de los conceptos básicos de la programación sea tan accesible y emocionante como sea posible. Estoy comprometido a ayudar a otros a descubrir el mundo de la creación web y a abrir nuevas oportunidades a través del conocimiento tecnológico.
+            </p>
+            <button id="closeAboutMe" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded self-end">Cerrar</button>
+        </div>
+        
+      </div>
+    
+      <div id="clasesParticularesPopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
+          <p>Mis clases particulares se llevan a cabo a través de videollamadas, brindando la comodidad de aprender desde la comodidad de tu hogar. Ofrezco un enfoque personalizado y flexible, adaptándome a tus necesidades y ritmo de aprendizaje.
+            Proporciono material de estudio relevante y útil para que puedas profundizar en los conceptos de manera efectiva. Ya sea que sigamos un programa de estudios estructurado o nos centremos en temas particulares y puntuales de tu interés, el objetivo es maximizar tu comprensión y habilidades.
+            En algunos casos, podemos establecer evaluaciones o exámenes para medir tu progreso y identificar áreas que requieren atención adicional. Estoy aquí para ayudarte en la preparación de exámenes, brindándote estrategias efectivas y recursos para que enfrentes cualquier desafío académico con confianza.
+            Si estás buscando un enfoque personalizado, apoyo en la preparación de exámenes y la flexibilidad de aprender a tu propio ritmo, ¡las clases particulares en línea son la opción perfecta! ¡Espero poder acompañarte en tu viaje educativo!</p>
+          <button id="closeClasesParticulares" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded self-end">Cerrar</button>
+        </div>
+      </div>
+    
+      <div id="contactoPopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
+        <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
+            <div>
+              <img src="./assets/mail.png" alt="">
+
+            </div>
+          <button id="closeContacto" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded self-end">Cerrar</button>
+        </div>
+      </div>
+  
+      <img class="w-full h-full object-cover" src="./assets/bienvenida.jpeg" alt="">
+</div>
+    
+  
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
