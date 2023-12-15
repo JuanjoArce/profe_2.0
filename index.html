@@ -16,7 +16,8 @@
         <button id="openContacto" class="bg-blue-500 hover:bg-blue-700 text-dark font-bold py-2 px-4 rounded">Contacto</button>
       </div>
     
-      <!-- Popups ocultos por defecto -->
+      
+      <!-- sobre mi -->
       <div id="aboutMePopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
         <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
             <p class="text-center">
@@ -28,7 +29,7 @@
         </div>
         
       </div>
-    
+    <!-- clases -->
       <div id="clasesParticularesPopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
         <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
           <p>Mis clases particulares se llevan a cabo a través de videollamadas, brindando la comodidad de aprender desde la comodidad de tu hogar. Ofrezco un enfoque personalizado y flexible, adaptándome a tus necesidades y ritmo de aprendizaje.
@@ -38,13 +39,17 @@
           <button id="closeClasesParticulares" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded self-end">Cerrar</button>
         </div>
       </div>
-    
+
+    <!-- contacto -->
+
       <div id="contactoPopup" class="hidden fixed bottom-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 flex items-center justify-center">
         <div class="bg-gray-800 text-white p-8 rounded shadow-md w-10/12 h-4/5 text-xl flex flex-col justify-center items-center">
-            <div>
-              <img src="./assets/mail.png" alt="">
-
+          <div class="flex items-center justify-center">
+            <div class="flex items-center space-x-4">
+              <img src="./assets/mail.png" alt="" class="h-8 w-12">
+              <h1 class="text-lg font-bold">juanjosearceherrera@gmail.com</h1>
             </div>
+          </div>                  
           <button id="closeContacto" class="mt-4 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded self-end">Cerrar</button>
         </div>
       </div>
